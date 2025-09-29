@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Demo</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background:powderblue;
+      color: #333;
+    }
+
+    header {
+      background: #222;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5em;
+    }
+
+    
+
+    nav {
+      display: flex;
+      justify-content: center;
+      background: #444;
+      padding: 10px;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #ff9800;
+    }
+
+    .section {
+      padding: 50px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .about, .projects, .contact {
+      margin-bottom: 50px;
+    }
+
+    .about h2, .projects h2, .contact h2 {
+      margin-bottom: 20px;
+      font-size: 2em;
+      text-align: left;
+    }
+
+    .about p {
+      font-size: 1.1em;
+      line-height: 1.6;
+      text-align: left;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .projects-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .project-card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .project-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .project-card h3 {
+      padding: 15px;
+      font-size: 1.4em;
+      background: #f1f1f1;
+    }
+
+    .project-card p {
+      padding: 15px;
+      font-size: 1em;
+      color: #666;
+    }
+
+    .contact form {
+      max-width: 600px;
+      margin: auto;
+      display: flex;
+      flex-direction:column;
+      gap: 15px;
+    }
+
+    .contact input, .contact textarea {
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1em;
+      width: 100%;
+    }
+
+    .contact button {
+      padding: 12px;
+      background: #222;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 1.1em;
+      transition: background 0.3s;
+    }
+
+    .contact button:hover {
+      background: #white;
+    }
+
+    footer {
+      text-align: center;
+      background: #222;
+      color: white;
+      padding: 15px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>My Portfolio</h1>
+    
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about" class="section about">
+    <h2>About Me</h2>
+    <p>Hello!my name is neelam yadav<br> b.tech cse-AI student<br> loves learning and creating clean,<br> modern, and user-friendly websites. <br>This is a simple portfolio demo <br>showcasing my work and skills.</p>
+    <img src="">
+    
+  </section>
+
+  <section id="projects" class="section projects">
+    <h2>More About Me</h2>
+    <div class="projects-container">
+      <div class="project-card">
+        
+        <h3>Student at parul university</h3>
+        <p>I'm currently persuning with the degree of B.Tech with CSE and specialisation of Artificial intelligence</p>
+      </div>
+      <div class="project-card">
+        
+        <h3>Part of NATIONAL CADET CORPS</h3>
+        <p>I have been a part of NCC from past 2 years completeing my B-certification and also have been with the rank of Lance-Corporal last year</p>
+      </div>
+      <div class="project-card">
+        
+        <h3>Interests and Hobbies</h3>
+        <p>My inrerests are in technologies,travel,learning and exploring new things and my hobbies are about reading books,cooking,painting and playing musical instruments</p>
+      </div>
+       <div class="project-card">
+        
+        <h3>Key Skills</h3>
+        <p>trobleshooting,leadership,maintenence,web designing</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section contact">
+    <h2>Contact Me</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 My Portfolio | All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>
